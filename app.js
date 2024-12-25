@@ -4,7 +4,9 @@ function sortear() {
     let ate = parseInt(document.getElementById("ate").value);
 
     if (quantidade > 10) {
-        alert("Quantidade de números limite atingida (10)")
+        alert("Quantidade de números limite atingida (10)");
+        document.getElementById("quantidade").value = "";
+        return;
     }
 
     if (de >= ate) {
