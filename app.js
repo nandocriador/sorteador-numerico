@@ -9,6 +9,21 @@ function sortear() {
         return;
     }
 
+    if (document.getElementById("quantidade").value == "") {
+        alert("Preencha todos os campos");
+        return;
+    } else {
+        if (document.getElementById("de").value == "") {
+            alert("Preencha todos os campos");
+            return;
+        } else {
+            if (document.getElementById("ate").value == "") {
+                alert("Preencha todos os campos");
+                return;
+            }
+        }
+    }
+
     if (de >= ate) {
         alert('Campo "Do número" deve ser inferior ao campo "Até o número". Verifique!');
         return;
